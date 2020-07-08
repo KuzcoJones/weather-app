@@ -1,11 +1,6 @@
 import React from 'react'
 
 
-const api = {
- key: "be40f9cd8335ced68e24e6298417aa60",
- base: "https://api.openweathermap.org/data/2.5/"
-}
-
 class LocationBox extends React.Component{
 
  constructor(props){
@@ -26,7 +21,6 @@ class LocationBox extends React.Component{
 
  render(){
   const {location, country} = this.state
-  console.log(this.state)
   const dateBuilder = (d) => {
    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
@@ -41,11 +35,10 @@ class LocationBox extends React.Component{
  }
  
   return(
-   <div className="location-box">
-   <div className="location">{location}, {country}
-   </div>
-<div className="date">{dateBuilder(new Date())}</div>
- </div>
+    <div className="location-box">
+      <div className="location">{location}, {country}</div>
+      <div className="date">{dateBuilder(new Date())}</div>
+    </div>
   )
  }
 }

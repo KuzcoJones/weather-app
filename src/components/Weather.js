@@ -1,9 +1,5 @@
 import React from 'react'
 
-const api = {
- key: "be40f9cd8335ced68e24e6298417aa60",
- base: "https://api.openweathermap.org/data/2.5/"
-}
 
 class Weather extends React.Component{
 
@@ -37,8 +33,6 @@ class Weather extends React.Component{
            </div>
           </div>
           <div className="weather">{weather}</div>
-          
-         
    </div>
   )
  }
